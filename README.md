@@ -8,3 +8,7 @@ vagrant up
 ```
 
 [http://localhost:8000/](http://localhost:8000)
+
+### Production
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
