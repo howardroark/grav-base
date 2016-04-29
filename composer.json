@@ -1,0 +1,8 @@
+{
+    "name": "howardroark/grav-ops",
+    "require": {
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-curl": "*"
+    }
+}
