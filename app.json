@@ -5,5 +5,11 @@
   "logo": "https://getgrav-grav.netdna-ssl.com/user/pages/media/grav-symbol.svg",
   "keywords": ["grav", "cms", "devops"],
   "addons": ["scheduler", "sendgrid"],
-  "buildpacks": [{"url": "https://github.com/howardroark/heroku-buildpack-gravops"}]
+  "buildpacks": [{"url": "https://github.com/howardroark/heroku-buildpack-gravops"}],
+  "env": {
+    "DOCUMENT_ROOT": {
+      "description": "Webserver root directory.",
+      "value": "/app/grav-admin"
+    }
+  }
 }
