@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 /grav-admin
+web: vendor/bin/heroku-php-apache2
