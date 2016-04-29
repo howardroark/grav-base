@@ -9,7 +9,7 @@
   "env": {
     "DOCUMENT_ROOT": {
       "description": "Webserver root directory.",
-      "value": "/app/grav-admin"
+      "value": "/tmp/grav-admin"
     }
   }
 }
