@@ -1,0 +1,4 @@
+alias provision="sudo sh /project/ops/provision.sh"
+alias gpm="./home/vagrant/grav-admin/bin/gpm"
+
+cd /project
