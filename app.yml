@@ -3,5 +3,7 @@ name: GravOps
 image: debian-8-x64
 config:
   runcmd:
+    - apt-get update
+    - apt-get install -y curl
     - curl -L https://raw.githubusercontent.com/howardroark/gravops/master/ops/web/provision.sh -o /tmp/provision.sh
     - sh /tmp/provision.sh
