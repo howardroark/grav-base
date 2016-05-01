@@ -10,6 +10,10 @@ service nginx restart
 cp files/www.conf /etc/php5/fpm/pool.d/www.conf
 service php5-fpm restart
 
+mkdir -p /home/gravops/.ssh
+cp /root/.ssh/authorized_keys /home/gravops/.ssh/.
+chmod -R gravops:gravops /home/gravops/.ssh
+
 if [ -d /grav-admin ] ; then
     echo "Grav is already installed"
 else
