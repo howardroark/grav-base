@@ -1,5 +1,5 @@
 #https://dobutton.club
-name: Grav Ops
+name: "Grav Ops"
 image: debian-8-x64
 config:
   packages:
