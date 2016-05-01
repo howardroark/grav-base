@@ -1,8 +1,6 @@
 apt-get update
 apt-get install -y git unzip tree vim nginx php5-fpm php5-curl php5-dev php5-cli php5-gd
 
-useradd -m gravops
-
 git clone https://github.com/howardroark/gravops.git /tmp/gravops
 cd /tmp/gravops/ops/web
 
@@ -15,6 +13,7 @@ service php5-fpm restart
 mkdir -p /home/gravops/.ssh
 cp /root/.ssh/authorized_keys /home/gravops/.ssh/.
 chmod -R gravops:gravops /home/gravops/.ssh
+passwd -d gravops
 
 if [ -d /grav-admin ] ; then
     echo "Grav is already installed"
