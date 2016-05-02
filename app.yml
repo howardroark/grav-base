@@ -1,10 +1,3 @@
 name: GravOps
 image: debian-8-x64
-config:
-  packages:
-    - curl
-  users:
-    - name: gravops
-  runcmd:
-    - curl -L https://raw.githubusercontent.com/howardroark/gravops/master/ops/web/provision.sh -o /tmp/provision.sh
-    - sh /tmp/provision.sh
+provision: https://raw.githubusercontent.com/howardroark/gravops/master/ops/web/provision.sh
