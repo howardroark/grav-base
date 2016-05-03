@@ -1,9 +1,15 @@
 apt-get update
-apt-get install -y curl unzip tree vim nginx php5-fpm php5-curl php5-dev php5-cli php5-gd
+apt-get install -y git curl unzip tree vim nginx php5-fpm php5-curl php5-dev php5-cli php5-gd
+
+git init --bare /project.git
+chown -R gravops:gravops /project.git
 
 curl -L https://github.com/howardroark/GravOps/archive/master.tar.gz -o /tmp/gravops.tar.gz
 mkdir /project
 tar -xvf /tmp/gravops.tar.gz --strip 1 -C /project
+chown -R gravops:gravops /project
+
+su - root -c "cd /project && git init && git add . && git commit -m 'Initial commit' && git remote add origin /project.git && git push origin master"
 
 cd /project/ops/web
 
@@ -23,8 +29,6 @@ else
     chown -R gravops:gravops /grav-admin
     rm -rf /grav-admin/user
 fi
-
-chown -R gravops:gravops /project
 
 ln -s /project /grav-admin/user
 
