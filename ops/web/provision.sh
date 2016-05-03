@@ -30,4 +30,4 @@ ln -s /project /grav-admin/user
 
 mkdir -p /home/gravops/.ssh
 cp /root/.ssh/authorized_keys /home/gravops/.ssh/.
-chmod -R gravops:gravops /home/gravops/.ssh
+chown -R gravops:gravops /home/gravops/.ssh
