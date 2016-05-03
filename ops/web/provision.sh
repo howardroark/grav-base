@@ -9,6 +9,8 @@ mkdir /project
 tar -xvf /tmp/gravops.tar.gz --strip 1 -C /project
 chown -R gravops:gravops /project
 
+su - gravops -c "git config --global user.email \"hello@gravops.com\""
+su - gravops -c "git config --global user.name \"GravOps\""
 su - gravops -c "cd /project && git init && git add . && git commit -m 'Initial commit' && git remote add origin /project.git && git push origin master"
 
 cd /project/ops/web
