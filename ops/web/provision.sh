@@ -9,7 +9,7 @@ mkdir /project
 tar -xvf /tmp/gravops.tar.gz --strip 1 -C /project
 chown -R gravops:gravops /project
 
-su - root -c "cd /project && git init && git add . && git commit -m 'Initial commit' && git remote add origin /project.git && git push origin master"
+su - gravops -c "cd /project && git init && git add . && git commit -m 'Initial commit' && git remote add origin /project.git && git push origin master"
 
 cd /project/ops/web
 
