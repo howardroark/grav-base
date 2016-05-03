@@ -1,15 +1,16 @@
-git clone https://github.com/howardroark/gravops.git /project
+apt-get update
+apt-get install -y curl unzip tree vim nginx php5-fpm php5-curl php5-dev php5-cli php5-gd
+
+curl -L https://github.com/howardroark/GravOps/archive/master.tar.gz -o /tmp/gravops.tar.gz
+mkdir /project
+tar -xvf /tmp/gravops.tar.gz --strip 1 -C /project
 
 cd /project/ops/web
 
-apt-get update
-apt-get install -y git unzip tree vim nginx php5-fpm php5-curl php5-dev php5-cli php5-gd
-
-cp files/nginx.conf /etc/nginx/nginx.conf
-service nginx restart
-
 cp files/www.conf /etc/php5/fpm/pool.d/www.conf
+cp files/nginx.conf /etc/nginx/nginx.conf
 service php5-fpm restart
+service nginx restart
 
 if [ -d /grav-admin ] ; then
     echo "Grav is already installed"
