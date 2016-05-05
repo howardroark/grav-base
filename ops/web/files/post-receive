@@ -1,0 +1,4 @@
+#!/bin/sh
+# post-receive
+cd /project
+git pull origin master

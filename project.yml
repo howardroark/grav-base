@@ -1,0 +1,28 @@
+name: GravOps
+image: debian-8-x64
+
+cloud-config:
+  packages:
+    - curl
+  users:
+    - name: gravops
+  runcmd:
+    - curl -L https://raw.githubusercontent.com/howardroark/gravops/master/ops/web/provision.sh -o /tmp/provision.sh
+    - sh /tmp/provision.sh
+
+instructions: |
+  ### Grav is installed!
+  
+  Your production ready `web` install of Grav is now running at `http://{{ droplet.ip }}`. Point your domain to that IP at any time.
+  
+  **But, first** setup the [Grav admin](http://{{ droplet.ip }}).
+  
+  After that you can setup a `dev` install by cloning a copy of the new git codebase (requires DigitalOcean ssh-key).
+  
+  ```
+  $ git clone -o gravops ssh://gravops@{{ droplet.ip }}/project.git NEW_PROJECT
+  
+  $ cd NEW_PROJECT && vagrant up
+  ```
+  
+  Your dev site will then be running at [http://localhost:8000](http://localhost:8000)
