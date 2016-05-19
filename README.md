@@ -9,7 +9,7 @@ In order to work with GravOps all you need is a basic understanding of the comma
 
 Ensure that you have a [DigitalOcean](https://www.digitalocean.com/?refcode=c44e132bd9a1) account and [configure ssh-keys for droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
 
-[![Install on DigitalOcean](https://dobutton.club/button.svg?v2)](https://dobutton.club/howardroark/gravops)
+[![DoButton](http://dobutton.club/DO.png)](http://dobutton.club/howardroark/GravOps)
 
 ### Requirements
 
