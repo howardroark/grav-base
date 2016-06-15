@@ -1,6 +1,8 @@
 apt-get update
 apt-get install -y git curl unzip tree vim nginx php5-fpm php5-curl php5-dev php5-cli php5-gd
 
+useradd -m gravops
+
 curl -L https://github.com/howardroark/GravOps/archive/master.tar.gz -o /tmp/gravops.tar.gz
 mkdir /project
 tar -xvf /tmp/gravops.tar.gz --strip 1 -C /project
