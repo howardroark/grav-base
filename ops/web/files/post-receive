@@ -1,2 +1,4 @@
 #!/bin/sh
-git -C /project pull origin master 
+#http://stackoverflow.com/a/5769715
+unset $(git rev-parse --local-env-vars)
+git -C /project pull origin master
