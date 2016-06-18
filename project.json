@@ -3,6 +3,6 @@
   "image": "debian-8-x64",
   "provision": {
       "script": "ops/web/provision.sh",
-      "instructions": "Your production ready `web` install of Grav is now running at `http://{{ droplet.ip }}`. Point your domain to that IP at any time."
+      "instructions": "Your production ready `web` install of Grav is now running at `http://{{ droplet.ip }}`. Point your domain to that IP at any time.\n You can now clone the project... `git clone gravops@{{ droplet.ip }}:/project.git`.\n Any changes you push to the `master` branch will automatically be deployed."
   }
 }
