@@ -19,7 +19,7 @@ su - gravops -c "git config --global user.email \"hello@gravops.com\""
 su - gravops -c "git config --global user.name \"GravOps\""
 su - gravops -c "cd /project && git init && git add . && git commit -m 'Initial commit' && git remote add origin /project.git && git push origin master"
 
-su - gravops -c "crontab /project/ops/web/cronjobs.txt"
+su - gravops -c "crontab /project/ops/web/files/cronjobs.txt"
 
 cp files/www.conf /etc/php5/fpm/pool.d/www.conf
 cp files/nginx.conf /etc/nginx/nginx.conf
