@@ -1,0 +1,1 @@
+*/1 * * * * sh /project/ops/web/sync-git.sh
