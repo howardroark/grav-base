@@ -3,6 +3,6 @@
   "image": "debian-8-x64",
   "provision": {
       "script": "ops/web/provision.sh",
-      "instructions": "### Install Complete!\n\n Your production ready `web` install of Grav is now running at `http://{{ droplet.ip }}`.\n\n #### DNS\n\n Point your domain's A record towards `{{ droplet.ip }}` at any time.\n\n #### Development & Deployment\n\n Clone the project from the droplet:\n\n ```\n\ngit clone gravops@{{ droplet.ip }}:/project.git\n\n```\n\n Once in your project's directory you can run `vagrant up`\n\n Any changes you push to the `master` branch will automatically be deployed."
+      "instructions": "ops/web/files/instructions.md"
   }
 }
