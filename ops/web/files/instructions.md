@@ -16,5 +16,5 @@ git clone gravops@{{ droplet.ip }}:/project.git
 
 Once in your project's directory you can run `vagrant up`
 
-Any changes you push to the `master` branch will automatically be deployed.
-As well, any changes made in the Grav admin panel will be available to pull.
+Any changes you push to the `master` branch will automatically be deployed and,
+any changes made in the Grav admin panel will be available to pull.
