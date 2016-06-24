@@ -3,6 +3,6 @@
   "image": "debian-8-x64",
   "provision": {
       "script": "ops/web/provision.sh",
-      "instructions": "ops/web/files/instructions.md"
+      "complete": "ops/web/files/instructions.md"
   }
 }
