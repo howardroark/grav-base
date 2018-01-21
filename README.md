@@ -11,7 +11,7 @@ In order to work with GravOps all you need is a basic understanding of ssh and g
 
 Ensure that you have a [DigitalOcean](https://www.digitalocean.com/?refcode=c44e132bd9a1) account and [configure ssh-keys for droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
 
-[![DoButton](http://dobutton.surge.sh/do.svg)](https://dobutton.surge.sh/howardroark/gravops)
+[![DoButton](http://dobutton.surge.sh/do.svg)](http://do-it.surge.sh/howardroark/gravops)
 
 ### Requirements
 
