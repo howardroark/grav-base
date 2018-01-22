@@ -1,4 +1,0 @@
-autocmd BufRead,BufNewFile *.js set ts=4 sw=4 et sts=4
-autocmd BufRead,BufNewFile *.css set ts=4 sw=4 et sts=4
-autocmd BufRead,BufNewFile *.html set ts=4 sw=4 et sts=4
-autocmd BufRead,BufNewFile *.php set ts=4 sw=4 et sts=4
