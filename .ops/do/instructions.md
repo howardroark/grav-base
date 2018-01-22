@@ -1,6 +1,6 @@
 ### Install Complete!
 
-Your production ready `web` install of Grav is now running at `http://{{ droplet.ip }}`.
+Grav is now running at `http://{{ droplet.ip }}`.
 
 #### DNS
 
