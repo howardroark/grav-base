@@ -8,7 +8,7 @@ mkdir /project
 tar -xvf /tmp/gravops.tar.gz --strip 1 -C /project
 chown -R gravops:gravops /project
 
-cd /project/ops/web
+cd /project/.ops/do
 
 git init --shared --bare /project.git
 cp files/post-receive /project.git/hooks/post-receive
