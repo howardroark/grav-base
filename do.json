@@ -1,6 +1,6 @@
 {
-  "name": "GravOps",
   "do": {
+    "name": "GravOps",
     "image": "debian-8-x64",
     "provision": ".ops/do/provision.sh",
     "instructions": ".ops/do/instructions.md"
