@@ -11,7 +11,7 @@ Point your domain's A record towards `{{ droplet.ip }}` at any time.
 Clone the project from the droplet:
 
 ```
-git clone gravops@{{ droplet.ip }}:/project.git
+git clone grav-base@{{ droplet.ip }}:/project.git
 ```
 
 Once in your project's directory you can run `vagrant up`
