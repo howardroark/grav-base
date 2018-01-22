@@ -7,13 +7,18 @@ updates with git hooks.
 
 In order to work with Grav Base all you need is a basic understanding of ssh and git.
 
-### Get started
+# Setup
 
-Ensure that you have a [DigitalOcean](https://www.digitalocean.com/?refcode=c44e132bd9a1) account and [configure ssh-keys for droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
+## DigitalOcean
+
+Ensure that you have a [DigitalOcean account](https://www.digitalocean.com/?refcode=746739df613c) with [ssh-keys configured for droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
 
 [![DoButton](http://do-it.surge.sh/do-it.svg)](http://do-it.surge.sh/howardroark/grav-base)
 
-### Requirements
+### Vagrant
 
-- [DigitalOcean account](https://www.digitalocean.com/?refcode=746739df613c) with [ssh-keys configured for droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
-- [Vagrant](http://vagrantup.com) + [VirtualBox](http://virtualbox.org) installed on your machine
+Install [Vagrant](http://vagrantup.com) + [VirtualBox](http://virtualbox.org) installed on your machine
+
+```
+$ vagrant up
+```
