@@ -2,7 +2,7 @@
   "name": "GravOps",
   "do": {
     "image": "debian-8-x64",
-    "provision": ".ops/web/provision.sh",
-    "instructions": ".ops/web/files/instructions.md"
+    "provision": ".ops/do/provision.sh",
+    "instructions": ".ops/do/files/instructions.md"
   }
 }
