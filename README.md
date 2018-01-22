@@ -2,10 +2,10 @@
 
 [![Gitter](https://badges.gitter.im/howardroark/GravOps.svg)](https://gitter.im/howardroark/GravOps?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-GravOps is an approach that involves working with Grav's `user` directory and deploying
+Grav Base is an approach that involves working with Grav's `user` directory and deploying
 updates with git hooks. 
 
-In order to work with GravOps all you need is a basic understanding of ssh and git.
+In order to work with Grav Base all you need is a basic understanding of ssh and git.
 
 ### Get started
 
