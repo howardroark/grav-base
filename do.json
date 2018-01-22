@@ -1,6 +1,8 @@
 {
   "name": "GravOps",
-  "image": "debian-8-x64",
-  "provision": "ops/web/provision.sh",
-  "complete": "ops/web/files/instructions.md"
+  "do": {
+    "image": "debian-8-x64",
+    "provision": ".ops/web/provision.sh",
+    "instructions": ".ops/web/files/instructions.md"
+  }
 }
