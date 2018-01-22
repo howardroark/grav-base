@@ -1,5 +1,5 @@
 {
-    "name": "grav-base",
+    "name": "Grav Base",
     "branch": "develop",
     "provision": ".ops/do/provision.sh",
     "instructions": ".ops/do/instructions.md",
