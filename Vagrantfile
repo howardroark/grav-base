@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder ".", "/project"
 
   config.vm.provision :shell,
-    path: "ops/dev/provision.sh",
+    path: ".ops/vagrant/provision.sh",
     :keep_color => true
 
 end
