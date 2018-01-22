@@ -1,8 +1,10 @@
 {
-    "name": "grav-base",
-    "image": "debian-8-x64",
+    "name": "Grav Base",
+    "branch": "develop",
     "provision": ".ops/do/provision.sh",
     "instructions": ".ops/do/instructions.md",
-    "branch": "develop",
-    "config": "do.json"
+    "droplet": {
+        "name": "grav-base",
+        "image": "debian-8-x64"
+    }
 }
