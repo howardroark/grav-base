@@ -1,16 +1,7 @@
-cd /project/ops/dev
+cd /project/.ops/vagrant
 
 apt-get update
 apt-get install -y git unzip tree vim nginx php5-fpm php5-curl php5-dev php5-cli php5-gd
-
-cp files/bash_profile /home/vagrant/.bash_profile
-chown vagrant:vagrant /home/vagrant/.bash_profile
-
-cp files/gitconfig /home/vagrant/.gitconfig
-chown vagrant:vagrant /home/vagrant/.gitconfig
-
-cp files/vimrc /home/vagrant/.vimrc
-chown vagrant:vagrant /home/vagrant/.vimrc
 
 cp files/nginx.conf /etc/nginx/nginx.conf
 service nginx restart
